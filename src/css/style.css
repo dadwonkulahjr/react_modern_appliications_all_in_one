@@ -1,0 +1,28 @@
+.custom_footer_style{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    /* overflow: hidden; */
+    /* box-sizing: border-box; */
+    /* overflow:hidden;    */
+    /* box-sizing: border-box;   */
+}
+
+.reuse_cursor{
+    cursor: pointer;
+}
+/* body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    resize: none;
+} */
