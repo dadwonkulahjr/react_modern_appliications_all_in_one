@@ -26,3 +26,15 @@ body{
     box-sizing: border-box;
     resize: none;
 } */
+
+
+/*
+CountOpedia custom styles!
+*/
+
+.count_Opedia_Custom_Header_style{
+    border:1px solid gray;
+    position: relative;
+    width: 100%;
+    top:20px;
+}
