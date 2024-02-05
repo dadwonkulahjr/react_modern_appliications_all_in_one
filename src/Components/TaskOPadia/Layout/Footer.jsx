@@ -12,7 +12,7 @@ class Footer extends React.Component {
         <div className="row">
           <div className="col-12 custom_footer_style">
             Dad S. Wonkulah Jr says happy coding with{" "}
-            <i class="bi bi-heart-fill"></i>
+            <i className="bi bi-heart-fill"></i>
           </div>
         </div>
       </div>
@@ -20,15 +20,5 @@ class Footer extends React.Component {
   }
 }
 
-// const Footer = () => {
-//     return (
-//     <div className="container-fluid">
-//     <div className="row">
-//     <div className="col-12 custom_footer_style">Dad S. Wonkulah Jr says happy coding with <i class="bi bi-heart-fill"></i></div>
-
-//     </div>
-//     </div>
-//     );
-// }
 
 export default Footer;
