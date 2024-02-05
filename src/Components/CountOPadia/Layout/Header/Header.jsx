@@ -12,7 +12,7 @@ const Header = () =>{
             style={{ height: "40px", verticalAlign: "top" }}
           />
           <span className="h1 pt-4 text-white-50">
-            CountOpedia <i class="bi bi-emoji-smile-fill"></i> !
+            CountOpedia <i className="bi bi-emoji-smile-fill"></i> !
           </span>
           {/* <p>This course will be an exciting course.</p> */}
           <div className="count_Opedia_Custom_Header_style"></div>

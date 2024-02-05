@@ -106,9 +106,6 @@ class Counter extends React.Component {
         <div className="row col-sm-12 col-lg-4 mt-2 offset-sm-12 offset-lg-4 offset-md-12 text-center align-center">
           <button className="btn btn-warning btn-lg" onClick={this.handleReset}>Reset</button>
         </div>
-        {/* <div class="col-md-4">.col-md-4 .offset-md-4</div> */}
-        {/* <button onClick={this.handleAttack}  className="btn btn-success m-1" style={{width:"200px"}}>+1</button>
-                <button onClick={this.handleDefence} className="btn btn-danger m-1" style={{width:"200px"}}>-1</button> */}
       </div>
     );
   }
