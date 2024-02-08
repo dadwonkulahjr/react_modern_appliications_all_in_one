@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import MainBody from './Components/TaskOPadia/Layout/MainBody';
 import "../src/css/style.css";
-import ContactIndex from './Components/ContactOPedia/Contacts/ContactIndex';
+import StudentIndex from './Components/LifeCyclOpedia/Students/StudentIndex';
+// import ContactIndex from './Components/ContactOPedia/Contacts/ContactIndex';
 // import Header from './Components/CountOPadia/Layout/Header/Header';
 // import Counter from './Components/CountOPadia/Counter/Counter';
 
@@ -16,7 +17,8 @@ root.render(
     {/* <Header/>
     <Counter/> */}
   {/* </div>} */}
-  <ContactIndex/>
+  {/* <ContactIndex/> */}
+  <StudentIndex/>
   </React.StrictMode>
 );
 
