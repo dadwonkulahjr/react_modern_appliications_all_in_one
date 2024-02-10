@@ -5,6 +5,7 @@ import Footer from "./Components/WatchOPedia/Counter/Layout/Footer";
 // import MainBody from './Components/TaskOPadia/Layout/MainBody';
 import "../src/css/style.css";
 import Counter from "./Components/WatchOPedia/Counter/Counter";
+import MoviePage from "./Components/MovieOpedia/MoviePage";
 // import StudentIndex from './Components/LifeCyclOpedia/Students/StudentIndex';
 // import ContactIndex from './Components/ContactOPedia/Contacts/ContactIndex';
 // import Header from './Components/CountOPadia/Layout/Header/Header';
@@ -23,5 +24,6 @@ root.render(
     <Header />
     <Footer />
     <Counter />
+    <MoviePage />
   </React.StrictMode>
 );
