@@ -1,8 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import Header from "./Components/WatchOPedia/Counter/Layout/Header";
 // import Footer from "./Components/WatchOPedia/Counter/Layout/Footer";
+=======
+
+// import Footer from "./Components/LifeCyclOpedia/Layout/Footer";
+// import MainBody from './Components/TaskOPadia/Layout/MainBody';
+import "../src/css/style.css";
+// import StudentIndex from "./Components/LifeCyclOpedia/Students/StudentIndex";
+// import StudentIndexFunc from "./Components/LifeCyclOpedia/Students/StudentIndexFunc";
+import Header from "./Components/LifeCyclOpedia/Layout/Header";
+import Header from "./Components/WatchOPedia/Counter/Layout/Header";
+import Footer from "./Components/WatchOPedia/Counter/Layout/Footer";
 // import MainBody from './Components/TaskOPadia/Layout/MainBody';
 import "../src/css/style.css";
 import Header from "./Components/RoutOpedia/Layout/Header";
@@ -23,6 +34,7 @@ import { CryptoDetails } from "./Components/RoutOpedia/Layout/Pages/CryptoDetail
 // import StudentIndex from "./Components/LifeCyclOpedia/Students/StudentIndex";
 // import StudentIndexFunc from "./Components/LifeCyclOpedia/Students/StudentIndexFunc";
 // import Header from "./Components/LifeCyclOpedia/Layout/Header";
+
 // import ContactIndex from './Components/ContactOPedia/Contacts/ContactIndex';
 // import Header from './Components/CountOPadia/Layout/Header/Header';
 // import Counter from './Components/CountOPadia/Counter/Counter';
@@ -36,10 +48,14 @@ root.render(
     <Counter/> */}
     {/* </div>} */}
     {/* <ContactIndex/> */}
+
+    <Header />
+
     {/* <StudentIndex/> */}
     {/* <Header />
     <Footer />
     <Counter />
+
     <MoviePage /> */}
     {/* <Header /> */}
     <BrowserRouter>
@@ -67,5 +83,6 @@ root.render(
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </BrowserRouter>
+    <MoviePage 
   </React.StrictMode>
 );
