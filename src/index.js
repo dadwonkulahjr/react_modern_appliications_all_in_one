@@ -1,19 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import Header from "./Components/WatchOPedia/Counter/Layout/Header";
 // import Footer from "./Components/WatchOPedia/Counter/Layout/Footer";
 // import MainBody from './Components/TaskOPadia/Layout/MainBody';
 import "../src/css/style.css";
-import Header from "./Components/RoutOpedia/Layout/Header";
-import { Home } from "./Components/RoutOpedia/Layout/Pages/Home";
-import { About } from "./Components/RoutOpedia/Layout/Pages/About";
-import { Product } from "./Components/RoutOpedia/Layout/Pages/Products/Product";
-import { ProductList } from "./Components/RoutOpedia/Layout/Pages/Products/ProductList";
-import { CreateProduct } from "./Components/RoutOpedia/Layout/Pages/Products/CreateProduct";
-import { ProductDetails } from "./Components/RoutOpedia/Layout/Pages/Products/ProductDetails";
-import { NotFound } from "./Components/RoutOpedia/Layout/Pages/NotFound";
-import { CryptoDetails } from "./Components/RoutOpedia/Layout/Pages/CryptoDetails";
+import Header from "./Components/ReduxOpedia/Layout/Header";
+import { store } from "./redux/store";
+import { Provider } from "react-redux";
+// import Header from "./Components/RoutOpedia/Layout/Header";
+// import { Home } from "./Components/RoutOpedia/Layout/Pages/Home";
+// import { About } from "./Components/RoutOpedia/Layout/Pages/About";
+// import { Product } from "./Components/RoutOpedia/Layout/Pages/Products/Product";
+// import { ProductList } from "./Components/RoutOpedia/Layout/Pages/Products/ProductList";
+// import { CreateProduct } from "./Components/RoutOpedia/Layout/Pages/Products/CreateProduct";
+// import { ProductDetails } from "./Components/RoutOpedia/Layout/Pages/Products/ProductDetails";
+// import { NotFound } from "./Components/RoutOpedia/Layout/Pages/NotFound";
+// import { CryptoDetails } from "./Components/RoutOpedia/Layout/Pages/CryptoDetails";
 // import Counter from "./Components/WatchOPedia/Counter/Counter";
 // import MoviePage from "./Components/MovieOpedia/MoviePage";
 // import StudentIndex from './Components/LifeCyclOpedia/Students/StudentIndex';
@@ -30,6 +33,10 @@ import { CryptoDetails } from "./Components/RoutOpedia/Layout/Pages/CryptoDetail
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    <Provider store={store}>
+      <Header />
+    </Provider>
+
     {/* <div className='px-4'>
     {/* <MainBody/> */}
     {/* <Header/>
@@ -42,7 +49,7 @@ root.render(
     <Counter />
     <MoviePage /> */}
     {/* <Header /> */}
-    <BrowserRouter>
+    {/* <BrowserRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -66,6 +73,6 @@ root.render(
         </Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter> */}
   </React.StrictMode>
 );
